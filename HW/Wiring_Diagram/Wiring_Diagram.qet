@@ -2,7 +2,7 @@
     <properties>
         <property show="1" name="saveddate">17.02.25</property>
         <property show="1" name="saveddate-eu">17-02-2025</property>
-        <property show="1" name="savedtime">17:23</property>
+        <property show="1" name="savedtime">17:28</property>
         <property show="1" name="savedfilename">Wiring_Diagram</property>
         <property show="1" name="savedfilepath">/Users/marius/Library/Mobile Documents/com~apple~CloudDocs/Documents/Dokumente/GitHub/Holz-CNC/HW/Wiring_Diagram/Wiring_Diagram.qet</property>
         <property show="1" name="saveddate-us">2025-02-17</property>
@@ -202,10 +202,10 @@
                         <text>F1</text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
-                    <dynamic_elmt_text text_from="UserText" uuid="{216c82f2-53dd-43e8-a8f6-2a36050b85e7}" frame="false" x="-40" keep_visual_rotation="true" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-20">
+                    <dynamic_elmt_text text_from="UserText" uuid="{216c82f2-53dd-43e8-a8f6-2a36050b85e7}" frame="false" x="-50" keep_visual_rotation="true" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="30">
                         <text>Hauptsicherung</text>
                     </dynamic_elmt_text>
-                    <dynamic_elmt_text text_from="UserText" uuid="{021d98d3-673e-489e-9719-86dd49976fe8}" frame="false" x="-30" keep_visual_rotation="true" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-20">
+                    <dynamic_elmt_text text_from="UserText" uuid="{021d98d3-673e-489e-9719-86dd49976fe8}" frame="false" x="-40" keep_visual_rotation="true" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="20">
                         <text>40A</text>
                     </dynamic_elmt_text>
                 </dynamic_texts>
@@ -233,12 +233,12 @@
                 </terminals>
                 <inputs/>
                 <elementInformations>
-                    <elementInformation show="1" name="label">X6</elementInformation>
-                    <elementInformation show="1" name="formula">X6</elementInformation>
+                    <elementInformation show="1" name="label">X7</elementInformation>
+                    <elementInformation show="1" name="formula">X7</elementInformation>
                 </elementInformations>
                 <dynamic_texts>
                     <dynamic_elmt_text text_from="ElementInfo" uuid="{ce6bf224-cdd1-40dd-bd9a-3f6d5f44ffb9}" frame="false" x="-10" keep_visual_rotation="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-10">
-                        <text>X6</text>
+                        <text>X7</text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
@@ -306,6 +306,9 @@
                     <dynamic_elmt_text text_from="ElementInfo" uuid="{7ddc5fc8-b55b-45c5-bed4-7ce2b3992873}" frame="false" x="-50" keep_visual_rotation="true" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-20">
                         <text>K2</text>
                         <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text text_from="UserText" uuid="{c9a9f1d3-77e5-4ca5-aa6c-20f42c2ceb45}" frame="false" x="-70" keep_visual_rotation="true" font="Sans Serif,6,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-30">
+                        <text>SIE 5TT5830-2</text>
                     </dynamic_elmt_text>
                 </dynamic_texts>
                 <texts_groups/>
@@ -382,13 +385,59 @@
                         <text>K1</text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
+                    <dynamic_elmt_text text_from="UserText" uuid="{3ca64447-6a41-41dc-88e3-508b0d49f008}" frame="false" x="-70" keep_visual_rotation="true" font="Sans Serif,6,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-30">
+                        <text>SIE 5TT5830-2</text>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element uuid="{9869474c-775d-4396-9853-770f94f5954a}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="520" z="10" y="100" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" orientation="0" id="59"/>
+                    <terminal x="0" y="17" orientation="2" id="60"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="label"></elementInformation>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                    <elementInformation show="1" name="comment"></elementInformation>
+                    <elementInformation show="1" name="location"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element uuid="{498e8bd3-58a7-4da7-ba4d-9bb65ce1c97c}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="500" z="10" y="100" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" orientation="0" id="61"/>
+                    <terminal x="0" y="17" orientation="2" id="62"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="label"></elementInformation>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                    <elementInformation show="1" name="comment"></elementInformation>
+                    <elementInformation show="1" name="location"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text text_from="UserText" uuid="{3a3139ac-1059-4410-867d-52f88eeb514a}" frame="false" x="18.2454" keep_visual_rotation="true" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-15.6459">
+                        <text>X4</text>
+                    </dynamic_elmt_text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
             <element uuid="{eb671610-6c9d-477b-9f5b-6ab2889f6dbc}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="850" z="10" y="500" orientation="3">
                 <terminals>
-                    <terminal x="0" y="-7" orientation="0" id="59"/>
-                    <terminal x="0" y="17" orientation="2" id="60"/>
+                    <terminal x="0" y="-7" orientation="0" id="63"/>
+                    <terminal x="0" y="17" orientation="2" id="64"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -404,18 +453,18 @@
             </element>
             <element uuid="{fb763ed7-8569-4040-acc4-f121ee7d8590}" freezeLabel="false" type="embed://import/schuko.elmt" prefix="" x="850" z="10" y="100" orientation="1">
                 <terminals>
-                    <terminal x="16" y="-10" orientation="1" id="61"/>
-                    <terminal x="16" y="0" orientation="1" id="62"/>
-                    <terminal x="16" y="10" orientation="1" id="63"/>
+                    <terminal x="16" y="-10" orientation="1" id="65"/>
+                    <terminal x="16" y="0" orientation="1" id="66"/>
+                    <terminal x="16" y="10" orientation="1" id="67"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
-                    <elementInformation show="1" name="label">X5</elementInformation>
-                    <elementInformation show="1" name="formula">X5</elementInformation>
+                    <elementInformation show="1" name="label">X6</elementInformation>
+                    <elementInformation show="1" name="formula">X6</elementInformation>
                 </elementInformations>
                 <dynamic_texts>
                     <dynamic_elmt_text text_from="ElementInfo" uuid="{ce6bf224-cdd1-40dd-bd9a-3f6d5f44ffb9}" frame="false" x="-10" keep_visual_rotation="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-10">
-                        <text>X5</text>
+                        <text>X6</text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
@@ -423,8 +472,8 @@
             </element>
             <element uuid="{af3358fb-3904-4461-b003-afedc4498185}" freezeLabel="false" type="embed://import/10_electric/91_en_60617/en_60617_07/en_60617_07_02/en_60617_07_02_03.elmt" prefix="" x="280" z="10" y="160" orientation="3">
                 <terminals>
-                    <terminal x="0" y="-36" orientation="0" id="64"/>
-                    <terminal x="0" y="16" orientation="2" id="65"/>
+                    <terminal x="0" y="-36" orientation="0" id="68"/>
+                    <terminal x="0" y="16" orientation="2" id="69"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -443,16 +492,16 @@
             </element>
             <element uuid="{67e64e0f-5b47-4bce-9a7d-8e0f38bc1a7f}" freezeLabel="false" type="embed://import/machine_switch.elmt" prefix="" x="150" z="10" y="110" orientation="1">
                 <terminals>
-                    <terminal x="-10" y="-26" orientation="0" id="66"/>
-                    <terminal x="10" y="-26" orientation="0" id="67"/>
-                    <terminal x="30" y="-26" orientation="0" id="68"/>
-                    <terminal x="-36" y="-21" orientation="3" id="69"/>
-                    <terminal x="-36" y="-10" orientation="3" id="70"/>
-                    <terminal x="-36" y="0" orientation="3" id="71"/>
-                    <terminal x="-36" y="10" orientation="3" id="72"/>
-                    <terminal x="-10" y="6" orientation="2" id="73"/>
-                    <terminal x="10" y="6" orientation="2" id="74"/>
-                    <terminal x="30" y="6" orientation="2" id="75"/>
+                    <terminal x="-10" y="-26" orientation="0" id="70"/>
+                    <terminal x="10" y="-26" orientation="0" id="71"/>
+                    <terminal x="30" y="-26" orientation="0" id="72"/>
+                    <terminal x="-36" y="-21" orientation="3" id="73"/>
+                    <terminal x="-36" y="-10" orientation="3" id="74"/>
+                    <terminal x="-36" y="0" orientation="3" id="75"/>
+                    <terminal x="-36" y="10" orientation="3" id="76"/>
+                    <terminal x="-10" y="6" orientation="2" id="77"/>
+                    <terminal x="10" y="6" orientation="2" id="78"/>
+                    <terminal x="30" y="6" orientation="2" id="79"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -472,7 +521,7 @@
             </element>
             <element uuid="{4792fbda-a3d2-4db2-a7c3-dfc1f7ab1b77}" freezeLabel="false" type="embed://import/usb_port.elmt" prefix="" x="70" z="10" y="470" orientation="0">
                 <terminals>
-                    <terminal x="20" y="0" orientation="1" id="76"/>
+                    <terminal x="20" y="0" orientation="1" id="80"/>
                 </terminals>
                 <inputs/>
                 <dynamic_texts>
@@ -488,8 +537,8 @@
             </element>
             <element uuid="{727745b9-a37f-4d8a-ad91-8cb08a734b73}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="850" z="10" y="420" orientation="3">
                 <terminals>
-                    <terminal x="0" y="-7" orientation="0" id="77"/>
-                    <terminal x="0" y="17" orientation="2" id="78"/>
+                    <terminal x="0" y="-7" orientation="0" id="81"/>
+                    <terminal x="0" y="17" orientation="2" id="82"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -506,28 +555,9 @@
                 </dynamic_texts>
                 <texts_groups/>
             </element>
-            <element uuid="{d9a92436-efac-42a9-8b8d-632bf9662063}" freezeLabel="false" type="embed://import/schuko.elmt" prefix="" x="460" z="10" y="100" orientation="1">
-                <terminals>
-                    <terminal x="16" y="-10" orientation="1" id="79"/>
-                    <terminal x="16" y="0" orientation="1" id="80"/>
-                    <terminal x="16" y="10" orientation="1" id="81"/>
-                </terminals>
-                <inputs/>
-                <elementInformations>
-                    <elementInformation show="1" name="label">X2</elementInformation>
-                    <elementInformation show="1" name="formula">X2</elementInformation>
-                </elementInformations>
-                <dynamic_texts>
-                    <dynamic_elmt_text text_from="ElementInfo" uuid="{ce6bf224-cdd1-40dd-bd9a-3f6d5f44ffb9}" frame="false" x="-10" keep_visual_rotation="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-10">
-                        <text>X2</text>
-                        <info_name>label</info_name>
-                    </dynamic_elmt_text>
-                </dynamic_texts>
-                <texts_groups/>
-            </element>
             <element uuid="{f324aa40-9eed-4f14-9e8f-8426eea46dab}" freezeLabel="false" type="embed://import/hdmi_port.elmt" prefix="" x="70" z="10" y="500" orientation="0">
                 <terminals>
-                    <terminal x="20" y="0" orientation="1" id="82"/>
+                    <terminal x="20" y="0" orientation="1" id="83"/>
                 </terminals>
                 <inputs/>
                 <dynamic_texts>
@@ -543,9 +573,9 @@
             </element>
             <element uuid="{b6ad7c85-e22a-4feb-82f0-14ab1a8c1658}" freezeLabel="false" type="embed://import/schuko.elmt" prefix="" x="70" z="10" y="160" orientation="0">
                 <terminals>
-                    <terminal x="16" y="-10" orientation="1" id="83"/>
-                    <terminal x="16" y="0" orientation="1" id="84"/>
-                    <terminal x="16" y="10" orientation="1" id="85"/>
+                    <terminal x="16" y="-10" orientation="1" id="84"/>
+                    <terminal x="16" y="0" orientation="1" id="85"/>
+                    <terminal x="16" y="10" orientation="1" id="86"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -565,8 +595,8 @@
             </element>
             <element uuid="{25394dc4-7573-4a6d-8993-fa1b6f2371e4}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="850" z="10" y="340" orientation="3">
                 <terminals>
-                    <terminal x="0" y="-7" orientation="0" id="86"/>
-                    <terminal x="0" y="17" orientation="2" id="87"/>
+                    <terminal x="0" y="-7" orientation="0" id="87"/>
+                    <terminal x="0" y="17" orientation="2" id="88"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -585,18 +615,18 @@
             </element>
             <element uuid="{c2fbe1d1-f755-44b2-b352-956ad257077d}" freezeLabel="false" type="embed://import/schuko.elmt" prefix="" x="970" z="10" y="280" orientation="2">
                 <terminals>
-                    <terminal x="16" y="-10" orientation="1" id="88"/>
-                    <terminal x="16" y="0" orientation="1" id="89"/>
-                    <terminal x="16" y="10" orientation="1" id="90"/>
+                    <terminal x="16" y="-10" orientation="1" id="89"/>
+                    <terminal x="16" y="0" orientation="1" id="90"/>
+                    <terminal x="16" y="10" orientation="1" id="91"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
-                    <elementInformation show="1" name="label">X7</elementInformation>
-                    <elementInformation show="1" name="formula">X7</elementInformation>
+                    <elementInformation show="1" name="label">X8</elementInformation>
+                    <elementInformation show="1" name="formula">X8</elementInformation>
                 </elementInformations>
                 <dynamic_texts>
                     <dynamic_elmt_text text_from="ElementInfo" uuid="{77e2dd94-0b64-44d4-af37-906bddf66b0a}" frame="false" x="10" keep_visual_rotation="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="180" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="30">
-                        <text>X7</text>
+                        <text>X8</text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
@@ -604,8 +634,8 @@
             </element>
             <element uuid="{9caac97f-9084-490e-99f3-90ea66946d7a}" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/01_coils/bobine3.elmt" prefix="K" x="770" z="10" y="340" orientation="0">
                 <terminals>
-                    <terminal x="0" y="-17" orientation="0" id="91"/>
-                    <terminal x="0" y="17" orientation="2" id="92"/>
+                    <terminal x="0" y="-17" orientation="0" id="92"/>
+                    <terminal x="0" y="17" orientation="2" id="93"/>
                 </terminals>
                 <inputs/>
                 <links_uuids>
@@ -637,11 +667,11 @@
             </element>
             <element uuid="{7942ac1e-5249-4945-ab13-d26fc1906591}" freezeLabel="false" type="embed://import/19v_supply.elmt" prefix="" x="280" z="10" y="280" orientation="0">
                 <terminals>
-                    <terminal x="-10" y="-29" orientation="0" id="93"/>
-                    <terminal x="30" y="-29" orientation="0" id="94"/>
-                    <terminal x="50" y="-29" orientation="0" id="95"/>
-                    <terminal x="-10" y="29" orientation="2" id="96"/>
-                    <terminal x="50" y="29" orientation="2" id="97"/>
+                    <terminal x="-10" y="-29" orientation="0" id="94"/>
+                    <terminal x="30" y="-29" orientation="0" id="95"/>
+                    <terminal x="50" y="-29" orientation="0" id="96"/>
+                    <terminal x="-10" y="29" orientation="2" id="97"/>
+                    <terminal x="50" y="29" orientation="2" id="98"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -668,8 +698,8 @@
             </element>
             <element uuid="{0bb39592-a83f-440b-8aed-59557007e015}" freezeLabel="false" type="embed://import/10_electric/91_en_60617/en_60617_07/en_60617_07_02/en_60617_07_02_03.elmt" prefix="" x="270" z="10" y="150" orientation="3">
                 <terminals>
-                    <terminal x="0" y="-36" orientation="0" id="98"/>
-                    <terminal x="0" y="16" orientation="2" id="99"/>
+                    <terminal x="0" y="-36" orientation="0" id="99"/>
+                    <terminal x="0" y="16" orientation="2" id="100"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -690,8 +720,8 @@ Schutzschalter</text>
             </element>
             <element uuid="{13949994-72af-49a7-a527-17664f5233c6}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="850" z="10" y="520" orientation="3">
                 <terminals>
-                    <terminal x="0" y="-7" orientation="0" id="100"/>
-                    <terminal x="0" y="17" orientation="2" id="101"/>
+                    <terminal x="0" y="-7" orientation="0" id="101"/>
+                    <terminal x="0" y="17" orientation="2" id="102"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -710,8 +740,8 @@ Schutzschalter</text>
             </element>
             <element uuid="{553e9d3d-a147-4d19-9909-2c5ccfea55ed}" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/01_coils/bobine3.elmt" prefix="K" x="680" z="10" y="340" orientation="0">
                 <terminals>
-                    <terminal x="0" y="-17" orientation="0" id="102"/>
-                    <terminal x="0" y="17" orientation="2" id="103"/>
+                    <terminal x="0" y="-17" orientation="0" id="103"/>
+                    <terminal x="0" y="17" orientation="2" id="104"/>
                 </terminals>
                 <inputs/>
                 <links_uuids>
@@ -744,8 +774,8 @@ Schutzschalter</text>
             </element>
             <element uuid="{01d7269c-f579-44ad-b106-7c37714fd945}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="850" z="10" y="440" orientation="3">
                 <terminals>
-                    <terminal x="0" y="-7" orientation="0" id="104"/>
-                    <terminal x="0" y="17" orientation="2" id="105"/>
+                    <terminal x="0" y="-7" orientation="0" id="105"/>
+                    <terminal x="0" y="17" orientation="2" id="106"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -764,7 +794,7 @@ Schutzschalter</text>
             </element>
             <element uuid="{ca4c9f09-7eb8-4f5d-9b75-89d3cae711c2}" freezeLabel="false" type="embed://import/usb_port.elmt" prefix="" x="70" z="10" y="410" orientation="0">
                 <terminals>
-                    <terminal x="20" y="0" orientation="1" id="106"/>
+                    <terminal x="20" y="0" orientation="1" id="107"/>
                 </terminals>
                 <inputs/>
                 <dynamic_texts>
@@ -778,11 +808,94 @@ Schutzschalter</text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
+            <element uuid="{9e80b00f-1999-4ee6-8c24-a4724142a508}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="390" z="10" y="100" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" orientation="0" id="108"/>
+                    <terminal x="0" y="17" orientation="2" id="109"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="label"></elementInformation>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                    <elementInformation show="1" name="comment"></elementInformation>
+                    <elementInformation show="1" name="location"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text text_from="UserText" uuid="{3a3139ac-1059-4410-867d-52f88eeb514a}" frame="false" x="19.454" keep_visual_rotation="true" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-16.7238">
+                        <text>X2</text>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element uuid="{2b9097e5-f214-4a2d-8e1f-67d9050dae46}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="400" z="-1" y="100" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" orientation="0" id="110"/>
+                    <terminal x="0" y="17" orientation="2" id="111"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="label"></elementInformation>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                    <elementInformation show="1" name="comment"></elementInformation>
+                    <elementInformation show="1" name="location"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element uuid="{34ca4076-da0b-4b39-9f48-d17a5e17c761}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="460" z="-1" y="100" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" orientation="0" id="112"/>
+                    <terminal x="0" y="17" orientation="2" id="113"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="label"></elementInformation>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                    <elementInformation show="1" name="comment"></elementInformation>
+                    <elementInformation show="1" name="location"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element uuid="{7e4cd50c-4a98-4e4c-9f97-2e30111f1344}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="470" z="10" y="100" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" orientation="0" id="114"/>
+                    <terminal x="0" y="17" orientation="2" id="115"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="label"></elementInformation>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                    <elementInformation show="1" name="comment"></elementInformation>
+                    <elementInformation show="1" name="location"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
             <element uuid="{30fd147e-1f66-4adf-8516-82ace6684a2e}" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/01_auxiliary_contacts/contnonc.elmt" prefix="S" x="920" z="10" y="230" orientation="2">
                 <terminals>
-                    <terminal x="-20" y="-16" orientation="0" id="107"/>
-                    <terminal x="0" y="-16" orientation="0" id="108"/>
-                    <terminal x="0" y="16" orientation="2" id="109"/>
+                    <terminal x="-20" y="-16" orientation="0" id="116"/>
+                    <terminal x="0" y="-16" orientation="0" id="117"/>
+                    <terminal x="0" y="16" orientation="2" id="118"/>
                 </terminals>
                 <inputs/>
                 <links_uuids>
@@ -813,11 +926,11 @@ Schutzschalter</text>
             </element>
             <element uuid="{7d971809-40ca-4b83-8e4c-de72a32781aa}" freezeLabel="false" type="embed://import/nuc_pc.elmt" prefix="" x="320" z="10" y="430" orientation="0">
                 <terminals>
-                    <terminal x="-10" y="-31" orientation="0" id="110"/>
-                    <terminal x="10" y="-31" orientation="0" id="111"/>
-                    <terminal x="-26" y="0" orientation="3" id="112"/>
-                    <terminal x="-26" y="20" orientation="3" id="113"/>
-                    <terminal x="-26" y="40" orientation="3" id="114"/>
+                    <terminal x="-10" y="-31" orientation="0" id="119"/>
+                    <terminal x="10" y="-31" orientation="0" id="120"/>
+                    <terminal x="-26" y="0" orientation="3" id="121"/>
+                    <terminal x="-26" y="20" orientation="3" id="122"/>
+                    <terminal x="-26" y="40" orientation="3" id="123"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -842,10 +955,27 @@ Schutzschalter</text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
+            <element uuid="{21c0a380-d202-485f-a37a-54c95fc97fff}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="450" z="10" y="100" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" orientation="0" id="124"/>
+                    <terminal x="0" y="17" orientation="2" id="125"/>
+                </terminals>
+                <inputs/>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text text_from="UserText" uuid="{3a3139ac-1059-4410-867d-52f88eeb514a}" frame="false" x="18.2454" keep_visual_rotation="true" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-15.6459">
+                        <text>X3</text>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
             <element uuid="{a3255a7c-f579-4f69-8ad5-4c5584919b0d}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="850" z="10" y="430" orientation="3">
                 <terminals>
-                    <terminal x="0" y="-7" orientation="0" id="115"/>
-                    <terminal x="0" y="17" orientation="2" id="116"/>
+                    <terminal x="0" y="-7" orientation="0" id="126"/>
+                    <terminal x="0" y="17" orientation="2" id="127"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -864,9 +994,9 @@ Schutzschalter</text>
             </element>
             <element uuid="{ccabfadb-e049-42d9-aa1e-e1810c6eeebb}" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/01_auxiliary_contacts/contnonc.elmt" prefix="S" x="530" z="10" y="400" orientation="2">
                 <terminals>
-                    <terminal x="-20" y="-16" orientation="0" id="117"/>
-                    <terminal x="0" y="-16" orientation="0" id="118"/>
-                    <terminal x="0" y="16" orientation="2" id="119"/>
+                    <terminal x="-20" y="-16" orientation="0" id="128"/>
+                    <terminal x="0" y="-16" orientation="0" id="129"/>
+                    <terminal x="0" y="16" orientation="2" id="130"/>
                 </terminals>
                 <inputs/>
                 <links_uuids>
@@ -897,9 +1027,9 @@ Schutzschalter</text>
             </element>
             <element uuid="{266ead46-d6e4-4530-a72c-21aad32a5a41}" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/01_auxiliary_contacts/contnonc.elmt" prefix="S" x="880" z="10" y="230" orientation="2">
                 <terminals>
-                    <terminal x="-20" y="-16" orientation="0" id="120"/>
-                    <terminal x="0" y="-16" orientation="0" id="121"/>
-                    <terminal x="0" y="16" orientation="2" id="122"/>
+                    <terminal x="-20" y="-16" orientation="0" id="131"/>
+                    <terminal x="0" y="-16" orientation="0" id="132"/>
+                    <terminal x="0" y="16" orientation="2" id="133"/>
                 </terminals>
                 <inputs/>
                 <links_uuids>
@@ -924,10 +1054,10 @@ Schutzschalter</text>
             </element>
             <element uuid="{b7bb5da3-6745-4473-be0e-150a72546940}" freezeLabel="false" type="embed://import/2stage_signal.elmt" prefix="" x="930" z="10" y="440" orientation="0">
                 <terminals>
-                    <terminal x="0" y="-16" orientation="0" id="123"/>
-                    <terminal x="20" y="-16" orientation="0" id="124"/>
-                    <terminal x="40" y="-16" orientation="0" id="125"/>
-                    <terminal x="0" y="16" orientation="2" id="126"/>
+                    <terminal x="0" y="-16" orientation="0" id="134"/>
+                    <terminal x="20" y="-16" orientation="0" id="135"/>
+                    <terminal x="40" y="-16" orientation="0" id="136"/>
+                    <terminal x="0" y="16" orientation="2" id="137"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -943,12 +1073,32 @@ Schutzschalter</text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
+            <element uuid="{014755dc-6883-4047-a66c-e58c737fdeb4}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="510" z="-1" y="100" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" orientation="0" id="138"/>
+                    <terminal x="0" y="17" orientation="2" id="139"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="label"></elementInformation>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                    <elementInformation show="1" name="comment"></elementInformation>
+                    <elementInformation show="1" name="location"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
             <element uuid="{ae48b164-7ca9-400a-9bb5-fa2b34c3ce53}" freezeLabel="false" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" x="920" z="10" y="340" orientation="0">
                 <terminals>
-                    <terminal x="0" y="2" orientation="0" id="127"/>
-                    <terminal x="2" y="0" orientation="3" id="128"/>
-                    <terminal x="-2" y="0" orientation="1" id="129"/>
-                    <terminal x="0" y="-2" orientation="2" id="130"/>
+                    <terminal x="0" y="2" orientation="0" id="140"/>
+                    <terminal x="2" y="0" orientation="3" id="141"/>
+                    <terminal x="-2" y="0" orientation="1" id="142"/>
+                    <terminal x="0" y="-2" orientation="2" id="143"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -964,18 +1114,18 @@ Schutzschalter</text>
             </element>
             <element uuid="{cde372a5-57fa-49e4-91b9-2c849a421697}" freezeLabel="false" type="embed://import/schuko.elmt" prefix="" x="800" z="10" y="100" orientation="1">
                 <terminals>
-                    <terminal x="16" y="-10" orientation="1" id="131"/>
-                    <terminal x="16" y="0" orientation="1" id="132"/>
-                    <terminal x="16" y="10" orientation="1" id="133"/>
+                    <terminal x="16" y="-10" orientation="1" id="144"/>
+                    <terminal x="16" y="0" orientation="1" id="145"/>
+                    <terminal x="16" y="10" orientation="1" id="146"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
-                    <elementInformation show="1" name="label">X4</elementInformation>
-                    <elementInformation show="1" name="formula">X4</elementInformation>
+                    <elementInformation show="1" name="label">X5</elementInformation>
+                    <elementInformation show="1" name="formula">X5</elementInformation>
                 </elementInformations>
                 <dynamic_texts>
                     <dynamic_elmt_text text_from="ElementInfo" uuid="{ce6bf224-cdd1-40dd-bd9a-3f6d5f44ffb9}" frame="false" x="-10" keep_visual_rotation="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-10">
-                        <text>X4</text>
+                        <text>X5</text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
@@ -983,8 +1133,8 @@ Schutzschalter</text>
             </element>
             <element uuid="{026316cb-8ae1-4ed9-87f0-f22cbeba363d}" freezeLabel="false" type="embed://import/10_electric/10_allpole/200_fuses_protective_gears/10_fuses/pojistka1p.elmt" prefix="F" x="390" z="10" y="210" orientation="2">
                 <terminals>
-                    <terminal x="0" y="-11" orientation="0" id="134"/>
-                    <terminal x="0" y="11" orientation="2" id="135"/>
+                    <terminal x="0" y="-11" orientation="0" id="147"/>
+                    <terminal x="0" y="11" orientation="2" id="148"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -1012,20 +1162,21 @@ Schutzschalter</text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
-            <element uuid="{f19b3d3e-9b64-4cb0-a611-8bcda2753d54}" freezeLabel="false" type="embed://import/schuko.elmt" prefix="" x="510" z="10" y="100" orientation="1">
+            <element uuid="{551a3e4c-d6bf-46d9-a23c-0a65723c84ef}" freezeLabel="false" type="embed://import/10_electric/10_allpole/140_connectors_plugs/01_connectors_pins/connecteur_mf.elmt" prefix="X" x="410" z="10" y="100" orientation="0">
                 <terminals>
-                    <terminal x="16" y="-10" orientation="1" id="136"/>
-                    <terminal x="16" y="0" orientation="1" id="137"/>
-                    <terminal x="16" y="10" orientation="1" id="138"/>
+                    <terminal x="0" y="-7" orientation="0" id="149"/>
+                    <terminal x="0" y="17" orientation="2" id="150"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
-                    <elementInformation show="1" name="label">X3</elementInformation>
-                    <elementInformation show="1" name="formula">X3</elementInformation>
+                    <elementInformation show="1" name="label"></elementInformation>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                    <elementInformation show="1" name="comment"></elementInformation>
+                    <elementInformation show="1" name="location"></elementInformation>
                 </elementInformations>
                 <dynamic_texts>
-                    <dynamic_elmt_text text_from="ElementInfo" uuid="{ce6bf224-cdd1-40dd-bd9a-3f6d5f44ffb9}" frame="false" x="-10" keep_visual_rotation="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="270" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-10">
-                        <text>X3</text>
+                    <dynamic_elmt_text text_from="ElementInfo" uuid="{fe81088f-d6d0-4e9b-bca3-2eb075f5341f}" frame="false" x="4" keep_visual_rotation="true" font="Sans Serif,8,-1,5,0,0,0,0,0,0,normal" rotation="0" Valignment="AlignTop" Halignment="AlignLeft" text_width="-1" y="-14.5">
+                        <text></text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
@@ -1033,7 +1184,7 @@ Schutzschalter</text>
             </element>
             <element uuid="{db27ff0f-b62f-4cf7-b322-cc552ea8fcfc}" freezeLabel="false" type="embed://import/lan_port.elmt" prefix="" x="70" z="10" y="530" orientation="0">
                 <terminals>
-                    <terminal x="20" y="0" orientation="1" id="139"/>
+                    <terminal x="20" y="0" orientation="1" id="151"/>
                 </terminals>
                 <inputs/>
                 <dynamic_texts>
@@ -1049,21 +1200,21 @@ Schutzschalter</text>
             </element>
         </elements>
         <conductors>
-            <conductor bus="" terminal2="{7c366398-66c2-4951-9c80-0fa289c5431a}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{c2fbe1d1-f755-44b2-b352-956ad257077d}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="121" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="{7c366398-66c2-4951-9c80-0fa289c5431a}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{c2fbe1d1-f755-44b2-b352-956ad257077d}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="132" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="87" freezeLabel="false" element1="{ae48b164-7ca9-400a-9bb5-fa2b34c3ce53}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="115" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="22" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <segment length="-9" orientation="vertical"/>
+                <segment length="-68" orientation="vertical"/>
+                <segment length="20" orientation="horizontal"/>
+                <segment length="-40" orientation="vertical"/>
+                <segment length="-9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" freezeLabel="false" bicolor="false" numsize="7" cable="" usery="214.778" conductor_color="" dash-size="2" y="30" type="multi" userx="426.84" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{f19b3d3e-9b64-4cb0-a611-8bcda2753d54}" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="22" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
-                <segment length="-6.5" orientation="vertical"/>
-                <segment length="-70.5" orientation="vertical"/>
-                <segment length="50" orientation="horizontal"/>
-                <segment length="-43.5" orientation="vertical"/>
-                <segment length="-6.5" orientation="vertical"/>
+            <conductor bus="" terminal2="88" freezeLabel="false" element1="{ae48b164-7ca9-400a-9bb5-fa2b34c3ce53}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="24" freezeLabel="false" bicolor="false" numsize="7" cable="" usery="454.705" conductor_color="" dash-size="2" y="30" type="multi" userx="450.589" onetextperfolio="0" x="110" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="24V" conductor_section="" terminal1="59" formula="24V" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="24" freezeLabel="false" bicolor="false" numsize="7" cable="" usery="454.705" conductor_color="" dash-size="2" y="30" type="multi" userx="450.589" onetextperfolio="0" x="110" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="24V" conductor_section="" terminal1="63" formula="24V" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
             <conductor bus="" terminal2="{05fdba7b-6122-47ce-9e68-fe7ebc9c3df3}" freezeLabel="false" element1="{7942ac1e-5249-4945-ab13-d26fc1906591}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{026316cb-8ae1-4ed9-87f0-f22cbeba363d}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{e2b2e9fd-a835-4448-abc7-b94e9dd0dfbb}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
@@ -1082,7 +1233,7 @@ Schutzschalter</text>
             <conductor bus="" terminal2="8" freezeLabel="false" element1="{e5fc34ae-47b6-425b-b1c0-69c9700cde2a}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="30" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="60" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="65" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="30" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="60" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="69" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
             <conductor bus="" terminal2="{52bf346a-cfa7-498c-85fd-4400fd338bc3}" freezeLabel="false" element1="{b6ad7c85-e22a-4feb-82f0-14ab1a8c1658}" bicolor="false" numsize="7" cable="" usery="110" conductor_color="" dash-size="2" y="30" type="multi" userx="100" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{67e64e0f-5b47-4bce-9a7d-8e0f38bc1a7f}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{7bdc1078-771f-41cf-8756-e451d0083481}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
@@ -1101,10 +1252,10 @@ Schutzschalter</text>
                 <segment length="-9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="86" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="-60" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="91" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="87" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="-60" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="92" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{b2675506-49be-4c22-8d32-aa9be7a200d4}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{67e64e0f-5b47-4bce-9a7d-8e0f38bc1a7f}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="64" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="{b2675506-49be-4c22-8d32-aa9be7a200d4}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{67e64e0f-5b47-4bce-9a7d-8e0f38bc1a7f}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="68" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="-14" orientation="horizontal"/>
                 <segment length="-21" orientation="horizontal"/>
                 <segment length="-40" orientation="vertical"/>
@@ -1112,7 +1263,7 @@ Schutzschalter</text>
                 <segment length="-14" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="98" freezeLabel="false" element1="{67e64e0f-5b47-4bce-9a7d-8e0f38bc1a7f}" bicolor="false" numsize="7" cable="" usery="100" conductor_color="" dash-size="2" y="30" type="multi" userx="200" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{53465032-346d-4056-9a81-87c47bb07dda}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="99" freezeLabel="false" element1="{67e64e0f-5b47-4bce-9a7d-8e0f38bc1a7f}" bicolor="false" numsize="7" cable="" usery="100" conductor_color="" dash-size="2" y="30" type="multi" userx="200" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{53465032-346d-4056-9a81-87c47bb07dda}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="14" orientation="horizontal"/>
                 <segment length="21" orientation="horizontal"/>
                 <segment length="50" orientation="vertical"/>
@@ -1120,7 +1271,7 @@ Schutzschalter</text>
                 <segment length="14" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="7" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="-60" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="103" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="7" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="-60" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="104" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="9" orientation="vertical"/>
                 <segment length="20" orientation="vertical"/>
                 <segment length="150" orientation="horizontal"/>
@@ -1187,7 +1338,7 @@ Schutzschalter</text>
             <conductor bus="" terminal2="20" freezeLabel="false" element1="{026316cb-8ae1-4ed9-87f0-f22cbeba363d}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="20" type="multi" onetextperfolio="0" x="20" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{67931c05-57c6-40dd-8607-3e2bb47feaa8}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="7" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="-60" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="92" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="7" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="-60" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="93" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="9" orientation="vertical"/>
                 <segment length="20" orientation="vertical"/>
                 <segment length="60" orientation="horizontal"/>
@@ -1195,25 +1346,16 @@ Schutzschalter</text>
                 <segment length="9" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="28" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="60" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="99" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="28" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="30" type="multi" onetextperfolio="0" x="60" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="100" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="102" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="-60" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="86" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="103" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="-60" type="multi" onetextperfolio="0" x="10" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="87" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="-9" orientation="horizontal"/>
                 <segment length="0" orientation="horizontal"/>
                 <segment length="-50" orientation="vertical"/>
                 <segment length="-150" orientation="horizontal"/>
                 <segment length="20" orientation="vertical"/>
                 <segment length="9" orientation="vertical"/>
-                <sequentialNumbers/>
-            </conductor>
-            <conductor bus="" terminal2="{62d6aa78-c93e-4ce0-9108-17cc95085452}" freezeLabel="false" element1="{f19b3d3e-9b64-4cb0-a611-8bcda2753d54}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{deda9f2a-04fd-43a2-b8b4-99479cb3e9f5}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{7c366398-66c2-4951-9c80-0fa289c5431a}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
-                <segment length="9" orientation="vertical"/>
-                <segment length="21" orientation="vertical"/>
-                <segment length="60" orientation="horizontal"/>
-                <segment length="-60" orientation="vertical"/>
-                <segment length="11" orientation="horizontal"/>
-                <segment length="9" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
             <conductor bus="" terminal2="25" freezeLabel="false" bicolor="false" numsize="7" cable="" usery="446.259" conductor_color="" dash-size="2" y="0" type="multi" userx="633.525" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="GND" conductor_section="" terminal1="9" formula="GND" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
@@ -1239,17 +1381,6 @@ Schutzschalter</text>
             <conductor bus="" terminal2="{7c366398-66c2-4951-9c80-0fa289c5431a}" freezeLabel="false" element1="{8ee48805-b03f-4333-9b31-23a2444be528}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{cf00623e-e720-48a5-9a07-4e5367ca8a42}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{e44dabbb-6438-430f-8787-7c78f5b1e213}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" freezeLabel="false" element1="{cde372a5-57fa-49e4-91b9-2c849a421697}" bicolor="false" numsize="7" cable="" usery="157.524" conductor_color="" dash-size="2" y="0" type="multi" userx="702.922" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{f19b3d3e-9b64-4cb0-a611-8bcda2753d54}" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
-                <segment length="9" orientation="vertical"/>
-                <segment length="41" orientation="vertical"/>
-                <segment length="-290" orientation="horizontal"/>
-                <segment length="-41" orientation="vertical"/>
-                <segment length="-9" orientation="vertical"/>
-                <sequentialNumbers/>
-            </conductor>
-            <conductor bus="" terminal2="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" freezeLabel="false" element1="{b6ad7c85-e22a-4feb-82f0-14ab1a8c1658}" bicolor="false" numsize="7" cable="" usery="157.002" conductor_color="" dash-size="2" y="0" type="multi" userx="99.5021" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{d9a92436-efac-42a9-8b8d-632bf9662063}" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
-                <sequentialNumbers/>
-            </conductor>
             <conductor bus="" terminal2="25" freezeLabel="false" element1="{8ee48805-b03f-4333-9b31-23a2444be528}" bicolor="false" numsize="7" cable="" usery="359.946" conductor_color="" dash-size="2" y="0" type="multi" userx="360.366" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="GND" conductor_section="" terminal1="{7a500ff1-a56b-43f3-a5e7-c8972651a839}" formula="GND" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="-11.5" orientation="vertical"/>
                 <segment length="-8.5" orientation="vertical"/>
@@ -1266,27 +1397,7 @@ Schutzschalter</text>
                 <segment length="-11.5" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="29" freezeLabel="false" element1="{d9a92436-efac-42a9-8b8d-632bf9662063}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{7c366398-66c2-4951-9c80-0fa289c5431a}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
-                <sequentialNumbers/>
-            </conductor>
-            <conductor bus="" terminal2="{05fdba7b-6122-47ce-9e68-fe7ebc9c3df3}" freezeLabel="false" element1="{d9a92436-efac-42a9-8b8d-632bf9662063}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{026316cb-8ae1-4ed9-87f0-f22cbeba363d}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{7bdc1078-771f-41cf-8756-e451d0083481}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
-                <segment length="6.5" orientation="vertical"/>
-                <segment length="23.5" orientation="vertical"/>
-                <segment length="-80" orientation="horizontal"/>
-                <segment length="38.5" orientation="vertical"/>
-                <segment length="6.5" orientation="vertical"/>
-                <sequentialNumbers/>
-            </conductor>
-            <conductor bus="" terminal2="{52bf346a-cfa7-498c-85fd-4400fd338bc3}" freezeLabel="false" element1="{f19b3d3e-9b64-4cb0-a611-8bcda2753d54}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{deda9f2a-04fd-43a2-b8b4-99479cb3e9f5}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{7bdc1078-771f-41cf-8756-e451d0083481}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
-                <segment length="9" orientation="vertical"/>
-                <segment length="31" orientation="vertical"/>
-                <segment length="40" orientation="horizontal"/>
-                <segment length="-90" orientation="vertical"/>
-                <segment length="21" orientation="horizontal"/>
-                <segment length="9" orientation="horizontal"/>
-                <sequentialNumbers/>
-            </conductor>
-            <conductor bus="" terminal2="104" freezeLabel="false" element1="{cf135042-0239-4415-b8f7-7b2d725ea1cd}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{1d8adb26-83d8-40a9-9179-b1da34493ad7}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="105" freezeLabel="false" element1="{cf135042-0239-4415-b8f7-7b2d725ea1cd}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{1d8adb26-83d8-40a9-9179-b1da34493ad7}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="9" orientation="horizontal"/>
                 <segment length="21" orientation="horizontal"/>
                 <segment length="55" orientation="vertical"/>
@@ -1308,9 +1419,6 @@ Schutzschalter</text>
                 <segment length="-9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" freezeLabel="false" bicolor="false" numsize="7" cable="" usery="139.531" conductor_color="" dash-size="2" y="0" type="multi" userx="435.375" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{d9a92436-efac-42a9-8b8d-632bf9662063}" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="22" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
-                <sequentialNumbers/>
-            </conductor>
             <conductor bus="" terminal2="{b2675506-49be-4c22-8d32-aa9be7a200d4}" freezeLabel="false" element1="{cf135042-0239-4415-b8f7-7b2d725ea1cd}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{deda9f2a-04fd-43a2-b8b4-99479cb3e9f5}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{62d6aa78-c93e-4ce0-9108-17cc95085452}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
@@ -1320,7 +1428,7 @@ Schutzschalter</text>
             <conductor bus="" terminal2="{1d8adb26-83d8-40a9-9179-b1da34493ad7}" freezeLabel="false" element1="{cf135042-0239-4415-b8f7-7b2d725ea1cd}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{deda9f2a-04fd-43a2-b8b4-99479cb3e9f5}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{00053e57-2f3a-4192-ba71-8bde3ea6796e}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="101" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="13" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="102" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="13" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="9" orientation="horizontal"/>
                 <segment length="11" orientation="horizontal"/>
                 <segment length="70" orientation="vertical"/>
@@ -1330,7 +1438,7 @@ Schutzschalter</text>
                 <segment length="-9" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="43" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="100" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="43" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="101" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
             <conductor bus="" terminal2="24" freezeLabel="false" element1="{deda9f2a-04fd-43a2-b8b4-99479cb3e9f5}" bicolor="false" numsize="7" cable="" usery="346.816" conductor_color="" dash-size="2" y="0" type="multi" userx="497.011" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="24V" conductor_section="" rotation="360" terminal1="{a80e6ceb-1c94-4e47-a7a5-d053a20e675b}" formula="24V" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
@@ -1341,7 +1449,7 @@ Schutzschalter</text>
                 <segment length="-9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="77" freezeLabel="false" element1="{cf135042-0239-4415-b8f7-7b2d725ea1cd}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{b7addde5-0478-4d6e-8a94-c28cb511ef46}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="81" freezeLabel="false" element1="{cf135042-0239-4415-b8f7-7b2d725ea1cd}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{b7addde5-0478-4d6e-8a94-c28cb511ef46}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="9" orientation="horizontal"/>
                 <segment length="31" orientation="horizontal"/>
                 <segment length="80" orientation="vertical"/>
@@ -1368,7 +1476,7 @@ Schutzschalter</text>
                 <segment length="-9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="60" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="16" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="64" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="16" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
             <conductor bus="" terminal2="{00053e57-2f3a-4192-ba71-8bde3ea6796e}" freezeLabel="false" bicolor="false" numsize="7" cable="" usery="214.141" conductor_color="" dash-size="2" y="0" type="multi" userx="566.582" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{deda9f2a-04fd-43a2-b8b4-99479cb3e9f5}" text_color="#000000" condsize="1" num="24V" conductor_section="" terminal1="24" formula="24V" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
@@ -1391,6 +1499,14 @@ Schutzschalter</text>
                 <segment length="-9" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
+            <conductor bus="" terminal2="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{cde372a5-57fa-49e4-91b9-2c849a421697}" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="22" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <segment length="-9" orientation="vertical"/>
+                <segment length="-68" orientation="vertical"/>
+                <segment length="340" orientation="horizontal"/>
+                <segment length="-41" orientation="vertical"/>
+                <segment length="-9" orientation="vertical"/>
+                <sequentialNumbers/>
+            </conductor>
             <conductor bus="" terminal2="{f67b45cf-b11a-4195-9280-2c584a36e557}" freezeLabel="false" element1="{db27ff0f-b62f-4cf7-b322-cc552ea8fcfc}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{7d971809-40ca-4b83-8e4c-de72a32781aa}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{7c366398-66c2-4951-9c80-0fa289c5431a}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="9" orientation="horizontal"/>
                 <segment length="167" orientation="horizontal"/>
@@ -1402,7 +1518,10 @@ Schutzschalter</text>
             <conductor bus="" terminal2="{770e7598-f794-4a13-ba10-d2c24bfc1102}" freezeLabel="false" element1="{7d971809-40ca-4b83-8e4c-de72a32781aa}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{8ee48805-b03f-4333-9b31-23a2444be528}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{770e7598-f794-4a13-ba10-d2c24bfc1102}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{b2b96926-0560-4d59-bccd-74a76049f783}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{b7bb5da3-6745-4473-be0e-150a72546940}" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="105" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="125" freezeLabel="false" element1="{026316cb-8ae1-4ed9-87f0-f22cbeba363d}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{05fdba7b-6122-47ce-9e68-fe7ebc9c3df3}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="{b2b96926-0560-4d59-bccd-74a76049f783}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{b7bb5da3-6745-4473-be0e-150a72546940}" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="106" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="9" orientation="horizontal"/>
                 <segment length="30" orientation="horizontal"/>
                 <segment length="-29" orientation="vertical"/>
@@ -1410,7 +1529,7 @@ Schutzschalter</text>
                 <segment length="9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{c9107a64-3eea-4742-a493-59a88f64036b}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{b7bb5da3-6745-4473-be0e-150a72546940}" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="78" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="{c9107a64-3eea-4742-a493-59a88f64036b}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{b7bb5da3-6745-4473-be0e-150a72546940}" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="82" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="17.3333" orientation="horizontal"/>
                 <segment length="1.66667" orientation="horizontal"/>
                 <segment length="-30" orientation="vertical"/>
@@ -1419,13 +1538,33 @@ Schutzschalter</text>
                 <segment length="9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{e4790dc2-a596-4bfd-a892-356d04258c55}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{b7bb5da3-6745-4473-be0e-150a72546940}" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="116" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="{e4790dc2-a596-4bfd-a892-356d04258c55}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{b7bb5da3-6745-4473-be0e-150a72546940}" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="127" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="9" orientation="horizontal"/>
                 <segment length="20" orientation="horizontal"/>
                 <segment length="-30" orientation="vertical"/>
                 <segment length="50" orientation="horizontal"/>
                 <segment length="11" orientation="vertical"/>
                 <segment length="9" orientation="vertical"/>
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="29" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="111" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="115" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="150" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <segment length="9" orientation="vertical"/>
+                <segment length="40" orientation="vertical"/>
+                <segment length="60" orientation="horizontal"/>
+                <segment length="-40" orientation="vertical"/>
+                <segment length="-9" orientation="vertical"/>
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{b6ad7c85-e22a-4feb-82f0-14ab1a8c1658}" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="150" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="125" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="27" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="22" freezeLabel="false" element1="{b6ad7c85-e22a-4feb-82f0-14ab1a8c1658}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="{0c4fa42a-c0d0-4a73-a508-cd7a2cc0ad5f}" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
             <conductor bus="" terminal2="{72c44fb6-f65a-465c-a485-4bb407be6dda}" freezeLabel="false" element1="{7942ac1e-5249-4945-ab13-d26fc1906591}" bicolor="false" numsize="7" cable="" usery="358.247" conductor_color="" dash-size="2" y="0" type="multi" userx="297.839" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{7d971809-40ca-4b83-8e4c-de72a32781aa}" text_color="#000000" condsize="1" num="19V" conductor_section="" terminal1="{72c44fb6-f65a-465c-a485-4bb407be6dda}" formula="19V" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
@@ -1436,12 +1575,21 @@ Schutzschalter</text>
                 <segment length="9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{7c366398-66c2-4951-9c80-0fa289c5431a}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{ec4b77fb-e75c-4365-8a80-952820332a4d}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="122" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="{7c366398-66c2-4951-9c80-0fa289c5431a}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{ec4b77fb-e75c-4365-8a80-952820332a4d}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="133" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="-14" orientation="vertical"/>
                 <segment length="-6" orientation="vertical"/>
                 <segment length="30" orientation="horizontal"/>
                 <segment length="-56" orientation="vertical"/>
                 <segment length="-14" orientation="vertical"/>
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="{62d6aa78-c93e-4ce0-9108-17cc95085452}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{deda9f2a-04fd-43a2-b8b4-99479cb3e9f5}" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="139" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <segment length="9" orientation="vertical"/>
+                <segment length="30" orientation="vertical"/>
+                <segment length="60" orientation="horizontal"/>
+                <segment length="-70" orientation="vertical"/>
+                <segment length="11" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
             <conductor bus="" terminal2="{7c366398-66c2-4951-9c80-0fa289c5431a}" freezeLabel="false" element1="{7d971809-40ca-4b83-8e4c-de72a32781aa}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{f324aa40-9eed-4f14-9e8f-8426eea46dab}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{a3bdce12-7031-4b6a-8c1b-df244a8b1f53}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
@@ -1452,19 +1600,39 @@ Schutzschalter</text>
                 <segment length="-9" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="{7bdc1078-771f-41cf-8756-e451d0083481}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{c2fbe1d1-f755-44b2-b352-956ad257077d}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="108" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="{7bdc1078-771f-41cf-8756-e451d0083481}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{c2fbe1d1-f755-44b2-b352-956ad257077d}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="117" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
             <conductor bus="" terminal2="{1ee11a7a-2b99-490d-9ecd-b70c5ee81698}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{b7bb5da3-6745-4473-be0e-150a72546940}" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="10" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
+            <conductor bus="" terminal2="129" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="126" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="22" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="PE" conductor_section="" terminal1="60" formula="PE" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <segment length="9" orientation="vertical"/>
+                <segment length="40" orientation="vertical"/>
+                <segment length="-70" orientation="horizontal"/>
+                <segment length="68" orientation="vertical"/>
+                <segment length="9" orientation="vertical"/>
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="{52bf346a-cfa7-498c-85fd-4400fd338bc3}" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{deda9f2a-04fd-43a2-b8b4-99479cb3e9f5}" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="62" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <segment length="9" orientation="vertical"/>
+                <segment length="20" orientation="vertical"/>
+                <segment length="60" orientation="horizontal"/>
+                <segment length="-80" orientation="vertical"/>
+                <segment length="21" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+                <sequentialNumbers/>
+            </conductor>
             <conductor bus="" terminal2="{152de348-da91-4f72-b130-30efbf3185ad}" freezeLabel="false" element1="{7d971809-40ca-4b83-8e4c-de72a32781aa}" bicolor="false" numsize="7" cable="" usery="360.772" conductor_color="" dash-size="2" y="0" type="multi" userx="317.385" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" element2="{7942ac1e-5249-4945-ab13-d26fc1906591}" text_color="#000000" condsize="1" num="GND2" conductor_section="" terminal1="{7a500ff1-a56b-43f3-a5e7-c8972651a839}" formula="GND2" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="109" freezeLabel="false" element1="{ec4b77fb-e75c-4365-8a80-952820332a4d}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{7bdc1078-771f-41cf-8756-e451d0083481}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="118" freezeLabel="false" element1="{ec4b77fb-e75c-4365-8a80-952820332a4d}" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="{7bdc1078-771f-41cf-8756-e451d0083481}" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="24" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="24V" conductor_section="" terminal1="119" formula="24V" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="24" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="24V" conductor_section="" terminal1="130" formula="24V" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <segment length="-9" orientation="vertical"/>
                 <segment length="-11" orientation="vertical"/>
                 <segment length="-120" orientation="horizontal"/>
@@ -1472,21 +1640,25 @@ Schutzschalter</text>
                 <segment length="-9" orientation="vertical"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor bus="" terminal2="118" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="_" conductor_section="" terminal1="115" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+            <conductor bus="" terminal2="113" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="29" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bus="" terminal2="27" freezeLabel="false" bicolor="false" numsize="7" cable="" conductor_color="" dash-size="2" y="0" type="multi" onetextperfolio="0" x="0" function="" horizrotatetext="0" vertical-alignment="AlignRight" vertirotatetext="270" text_color="#000000" condsize="1" num="" conductor_section="" terminal1="109" formula="" displaytext="1" color2="#000000" tension_protocol="" horizontal-alignment="AlignBottom">
                 <sequentialNumbers/>
             </conductor>
         </conductors>
         <inputs>
             <input x="80.3836" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" y="153.27"/>
+            <input x="379.219" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Monitor&lt;/p>&lt;/body>&lt;/html>" y="57.1523"/>
             <input x="881.187" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>CNC Control&lt;/p>&lt;/body>&lt;/html>" y="57.0138"/>
             <input x="979.647" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>OUT&lt;/p>&lt;/body>&lt;/html>" y="269.862"/>
             <input x="920" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>GND&lt;/p>&lt;/body>&lt;/html>" y="340"/>
-            <input x="850" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>X8&lt;/p>&lt;/body>&lt;/html>" y="320"/>
+            <input x="850" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>X9&lt;/p>&lt;/body>&lt;/html>" y="320"/>
             <input x="920" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>PWM&lt;/p>&lt;/body>&lt;/html>" y="330"/>
             <input x="840" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>IN&lt;/p>&lt;/body>&lt;/html>" y="70"/>
             <input x="1000" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>E-Stop&lt;/p>&lt;/body>&lt;/html>" y="500"/>
             <input x="1006.54" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Spindel&lt;/p>&lt;/body>&lt;/html>" y="268.922"/>
-            <input x="850" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>X10&lt;/p>&lt;/body>&lt;/html>" y="480"/>
+            <input x="850" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>X11&lt;/p>&lt;/body>&lt;/html>" y="480"/>
             <input x="896.608" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>OUT&lt;/p>&lt;/body>&lt;/html>" y="71.7917"/>
             <input x="454.471" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Staubsauger&lt;/p>&lt;/body>&lt;/html>" y="56.6466"/>
             <input x="500" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>IN&lt;/p>&lt;/body>&lt;/html>" y="70"/>
@@ -1494,9 +1666,10 @@ Schutzschalter</text>
             <input x="445.303" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>OUT&lt;/p>&lt;/body>&lt;/html>" y="70"/>
             <input x="801.118" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>RFID Box&lt;/p>&lt;/body>&lt;/html>" y="56.274"/>
             <input x="790" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>OUT&lt;/p>&lt;/body>&lt;/html>" y="70"/>
-            <input x="850" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>X9&lt;/p>&lt;/body>&lt;/html>" y="400"/>
+            <input x="850" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>X10&lt;/p>&lt;/body>&lt;/html>" y="400"/>
             <input x="980" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Signal Lamp&lt;/p>&lt;/body>&lt;/html>" y="420"/>
             <input x="40" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>IN&lt;/p>&lt;/body>&lt;/html>" y="150"/>
+            <input x="385.303" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>OUT&lt;/p>&lt;/body>&lt;/html>" y="70"/>
         </inputs>
         <shapes>
             <shape closed="0" x2="760" y1="490" type="Line" is_movable="1" y2="490" z="0" x1="590">
@@ -1529,11 +1702,11 @@ Schutzschalter</text>
                     <point x="770" y="40"/>
                     <point x="550" y="40"/>
                     <point x="550" y="100"/>
-                    <point x="430" y="100"/>
-                    <point x="430" y="40"/>
+                    <point x="340" y="100"/>
+                    <point x="340" y="40"/>
                 </points>
             </shape>
-            <shape closed="0" x2="70" y1="40" type="Line" is_movable="1" y2="40" z="0" x1="430">
+            <shape closed="0" x2="70" y1="40" type="Line" is_movable="1" y2="40" z="0" x1="340">
                 <pen style="DotLine" widthF="3" color="#ff9300"/>
                 <brush style="NoBrush" color="#000000"/>
             </shape>
