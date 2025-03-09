@@ -11,7 +11,7 @@ Unter "HW" sind der Schaltplan und die 3D-Druckteile zu finden. Dieser wurde mit
 Main Idea
 ========= 
 
-![Schaltplan](HW/Wiring_Diagram/Wiring_Diagram.pdf)
+![Schaltplan](Wiring_Diagram.jpg)
 
 Fragen ?
 ========
