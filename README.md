@@ -4,13 +4,18 @@ Dieses Repository dient der Dokumentation des Aufbaus unserer Holz-CNC, einschli
 
 Unter "Rechnungen" befinden sich die Rechnungen mit allen bestellten Teilen.
 
-Unter "HW" ist der Schaltplan zu finden. Dieser wurde mit [QElectroTech](https://qelectrotech.org/)
-
-Bei Fragen wendet euch bitte an das Holz-CNC-Team oder die Maintainer dieses Repos.
+Unter "HW" sind der Schaltplan und die 3D-Druckteile zu finden. Dieser wurde mit [QElectroTech](https://qelectrotech.org/) erstellt.
 
 [Original CNC + Controller](https://makerstore.krilano.com/product/full-parts-bundle-to-build-an-x-carve-style-cnc/)
 
 Main Idea
 ========= 
 
-![Main Idea](/WoodCNCSchaltschrank_Main.png)
+![Schaltplan](HW/Wiring_Diagram/Wiring_Diagram.pdf)
+
+Fragen ?
+========
+
+Bei Fragen wendet euch bitte an das Holz-CNC-Team oder die Maintainer dieses Repos.
+
+
