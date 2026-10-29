@@ -1,0 +1,24 @@
+# Display-only recovery test. Not suitable for operating the CNC.
+# PiBot V5.88 OLED header: GND, 3.3 V, GPIO13 SCL, GPIO14 SDA.
+# Power off before changing wiring; verify the module's VCC/GND order.
+# No motor, spindle, probe or limit pins are configured.
+board: PiBot V588
+name: PiBot recovery - OLED TEST ONLY
+meta: PiBot-documented 128x64 OLED at I2C address 0x3C
+
+stepping:
+  engine: Timed
+
+i2c0:
+  scl_pin: gpio.13
+  sda_pin: gpio.14
+
+oled:
+  i2c_num: 0.000
+  i2c_address: 60.000
+  width: 128.000
+  height: 64.000
+  radio_delay_ms: 1000.000
+
+start:
+  must_home: true

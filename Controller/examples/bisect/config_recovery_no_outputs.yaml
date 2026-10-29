@@ -1,0 +1,13 @@
+# Recovery only. Not suitable for operating the CNC.
+# No physical motor, spindle, relay, probe, limit or pendant pins are assigned.
+# Keep motor and router power disconnected until a machine config is restored.
+# Omitted axes use FluidNC's built-in null-motor defaults.
+board: PiBot V588
+name: PiBot recovery - NO MACHINE OUTPUTS
+meta: Minimal boot and WebUI recovery config
+
+stepping:
+  engine: Timed
+
+start:
+  must_home: true

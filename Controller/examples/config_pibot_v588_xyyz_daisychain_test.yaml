@@ -1,0 +1,192 @@
+##############################################################################
+# PiBot V5.88 Ultra - FluidNC
+# XYYZ SPI bring-up test - ALL 4 DRIVERS, daisy chain (spi_index 1..4)
+#
+# Move here AFTER the single-driver -1 test passes.
+#   * cs_pin on the FIRST driver in the chain only (X, I2SO.3).
+#   * spi_index counts 1,2,3,4 along the physical chain order.
+#   * r_sense_ohms: 0.1  (PiBot SilentStep TMC5160 V5 = 0.1 ohm sense)
+#
+# Wiring that MUST be true before this works:
+#   * MOSI/SCK/MISO daisy-chained through all 4 boards (SDI->SDO), single CS
+#     from the first board to I2SO.3.
+#   * Chain order matches spi_index: 1=X, 2=Y1, 3=Y2, 4=Z.
+#   * Every board: logic 3.3V, SD_MODE=1 + SPI_MODE=1, 24V present, common GND.
+#
+# Procedure:
+#   1. Flash this config.
+#   2. $MI - all four axes must pass ("X/Y/Z Axis driver test passed").
+#      Any failure = fix chain wiring/order/jumpers before jogging.
+#   3. Jog each axis slowly, e.g. $J=X10F500 then $J=Y10F500 then $J=Z5F100.
+##############################################################################
+
+board: PiBot V588
+name: PiBot V588 XYYZ SPI Test (daisy chain)
+
+stepping:
+  engine: I2S_STATIC
+  idle_ms: 254
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 0
+
+spi:
+  miso_pin: gpio.2
+  mosi_pin: gpio.1
+  sck_pin: gpio.21
+
+i2so:
+  bck_pin: gpio.16
+  data_pin: gpio.17
+  ws_pin: gpio.18
+
+sdcard:
+  card_detect_pin: NO_PIN
+  cs_pin: gpio.9
+
+start:
+  must_home: false
+
+axes:
+  shared_stepper_disable_pin: NO_PIN
+
+  x:
+    steps_per_mm: 80.000
+    max_rate_mm_per_min: 2000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 770.000
+    soft_limits: false
+    homing:
+      cycle: 0
+      positive_direction: false
+      mpos_mm: 0.000
+      feed_mm_per_min: 25.000
+      seek_mm_per_min: 800.000
+      settle_ms: 250
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      tmc_5160:
+        step_pin: I2SO.2
+        direction_pin: I2SO.1
+        disable_pin: I2SO.0
+        cs_pin: I2SO.3
+        spi_index: 1
+        r_sense_ohms: 0.1
+        run_amps: 1.5
+        hold_amps: 0.75
+        microsteps: 16
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false
+
+  y:
+    steps_per_mm: 80.000
+    max_rate_mm_per_min: 2000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 780.000
+    soft_limits: false
+    homing:
+      cycle: 0
+      positive_direction: false
+      mpos_mm: 0.000
+      feed_mm_per_min: 25.000
+      seek_mm_per_min: 800.000
+      settle_ms: 250
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      tmc_5160:
+        step_pin: I2SO.5
+        direction_pin: I2SO.4
+        disable_pin: I2SO.7
+        spi_index: 2
+        r_sense_ohms: 0.1
+        run_amps: 1.5
+        hold_amps: 0.75
+        microsteps: 16
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false
+    motor1:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      tmc_5160:
+        step_pin: I2SO.10
+        direction_pin: I2SO.9
+        disable_pin: I2SO.8
+        spi_index: 3
+        r_sense_ohms: 0.1
+        run_amps: 1.5
+        hold_amps: 0.75
+        microsteps: 16
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false
+
+  z:
+    steps_per_mm: 1511.808
+    max_rate_mm_per_min: 500.000
+    acceleration_mm_per_sec2: 25.000
+    max_travel_mm: 94.000
+    soft_limits: false
+    homing:
+      cycle: 0
+      positive_direction: true
+      mpos_mm: 0.000
+      feed_mm_per_min: 25.000
+      seek_mm_per_min: 800.000
+      settle_ms: 250
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      tmc_5160:
+        step_pin: I2SO.13
+        direction_pin: I2SO.12
+        disable_pin: I2SO.15
+        spi_index: 4
+        r_sense_ohms: 0.1
+        run_amps: 1.5
+        hold_amps: 0.75
+        microsteps: 16
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false

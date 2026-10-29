@@ -1,0 +1,333 @@
+##############################################################################
+## THIS EXAMLE ONLY FOR IOTEST, DO NOT USE FOR YOUR MACHINE BEFORE MODIFY  ##########
+#############################################################################
+
+board: PiBot V588
+name:  PiBot V588 IO Test YAML
+
+stepping:
+  engine: I2S_STATIC
+  idle_ms: 254
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 0
+
+###################################START TEST UART###################################
+## uart0 main usb port
+## uart1 RS485 tx rx
+## uart2 RJ12 TX rx
+## uart3 second usb port
+#####################################################################################
+
+
+## Begin expansion port uart and channel setup (test the rj12 port)
+uart2:
+  txd_pin: gpio.0
+  rxd_pin: gpio.35
+  baud: 1000000
+  mode: 8N1
+
+uart_channel2:
+  report_interval_ms: 75
+  uart_num: 2
+## End expansion port set up.
+
+## Start USB-HOST FIRST TIME NEED SET $USBCDC/Enable=Off (test the second usb port)
+#uart3:
+#  usb_host:
+#    baud: 115200
+# the baud almost=115200
+
+#uart_channel3:
+#  report_interval_ms: 0
+#  uart_num: 3
+#  message_level: Verbose
+## Start USB-HOST
+
+###################################END TEST UART####################################
+
+spi:
+  miso_pin: gpio.2
+  mosi_pin: gpio.1
+  sck_pin: gpio.21
+
+sdcard:
+  card_detect_pin: NO_PIN
+  cs_pin: gpio.9
+
+i2so:
+  bck_pin: gpio.16
+  data_pin: gpio.17
+  ws_pin: gpio.18
+
+## Begin OLED
+i2c0:
+   scl_pin: gpio.13
+   sda_pin: gpio.14
+
+oled:
+   i2c_num: 0
+   i2c_address: 60
+   width: 128
+   height: 64
+   radio_delay_ms: 1000
+## END OLED
+
+probe:
+  pin: gpio.47:low
+  toolsetter_pin: gpio.3:low
+  check_mode_start: true
+  hard_stop: false
+
+coolant:
+  mist_pin: gpio.4
+  flood_pin: gpio.5
+
+user_outputs:
+  digital0_pin: gpio.10
+  digital1_pin: gpio.15
+##M64 P0 / on --  M65 P0 / off // M64 P1 on --  M65 P1 off
+  
+start:
+  must_home: false
+
+axes:
+  shared_stepper_disable_pin: NO_PIN
+  x:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 150.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 200.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: gpio.42:low
+      limit_pos_pin: gpio.41:low
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      standard_stepper:
+        step_pin: I2SO.2
+        direction_pin: I2SO.1
+        disable_pin: I2SO.0
+
+  y:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 150.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 200.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: gpio.40:low
+      limit_pos_pin: gpio.39:low
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      standard_stepper:
+        step_pin: I2SO.5
+        direction_pin: I2SO.4
+        disable_pin: I2SO.7
+
+  z:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 150.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 200.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: gpio.38:low:pu
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      standard_stepper:
+        step_pin: I2SO.10
+        direction_pin: I2SO.9
+        disable_pin: I2SO.8
+
+  a:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 150.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 200.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: gpio.37:low
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      standard_stepper:
+        step_pin: I2SO.13
+        direction_pin: I2SO.12
+        disable_pin: I2SO.15
+
+  b:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 150.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 200.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: gpio.36:low
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      standard_stepper:
+        step_pin: I2SO.18
+        direction_pin: I2SO.17
+        disable_pin: I2SO.16
+
+
+  c:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 150.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 200.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: gpio.48:low
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      standard_stepper:
+        step_pin: I2SO.21
+        direction_pin: I2SO.20
+        disable_pin: I2SO.23
+
+# Begin PWM  
+pwm:
+  pwm_hz: 5000
+#   direction_pin: NO_PIN
+  output_pin: gpio.45
+  enable_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+#   spinup_ms: 0
+#   spindown_ms: 0
+  tool_num: 0
+  speed_map: 0=0.000% 10000=100.000%
+  off_on_alarm: false
+ 
+# Begin Laser 
+Laser:
+  pwm_hz: 5000
+  output_pin: gpio.46
+  enable_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+  tool_num: 1
+  speed_map: 0=0.000% 255=100.000%
+  off_on_alarm: true
+
+## Start 0-10V
+10V:
+  forward_pin: gpio.7
+  reverse_pin: gpio.8
+  pwm_hz: 5000
+  output_pin: gpio.6
+  enable_pin: NO_PIN
+  direction_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+  spinup_ms: 0
+  spindown_ms: 0
+  tool_num: 2
+  speed_map: 0=0.000% 1000=0.000% 24000=100.000%
+  off_on_alarm: false
+
+## Start only for test the RS485chip communication
+uart1:
+  txd_pin: gpio.12
+  rxd_pin: gpio.11
+  rts_pin: NO_PIN
+  baud: 9600
+  mode: 8N1
+
+ModbusVFD:
+  uart_num: 1
+  modbus_id: 1
+  debug: 0
+  poll_ms: 250
+  retries: 5
+  spinup_ms: 6000
+  spindown_ms: 6000
+  tool_num: 3
+  speed_map: 0=0.00% 24000=100.00%
+  off_on_alarm: false
+  atc:
+  m6_macro:
+  s0_with_disable: false
+  disable_with_s0: false
+  model: Huanyang
+  min_RPM: 6000
+  max_RPM: 24000
+  cw_cmd: 03 01 01 > echo
+  ccw_cmd: 03 01 11 > echo
+  off_cmd: 03 01 08 > echo
+  set_rpm_cmd: 05 02 rpm*100/60 > echo
+  get_min_rpm_cmd: 01 03 0b 00 00 > 01 03 0B minRPM*60/100
+  get_max_rpm_cmd: 01 03 05 00 00 > 01 03 05 maxRPM*60/100
+  get_rpm_cmd: 04 03 01 00 00 > 04 03 01 rpm*60/100
+  

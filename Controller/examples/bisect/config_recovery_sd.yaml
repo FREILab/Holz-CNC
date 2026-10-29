@@ -1,0 +1,21 @@
+# SD download diagnostics only. Not suitable for operating the CNC.
+# No motor, spindle, probe, limit or OLED pins are configured.
+# Keep motor/router power off and support Z if it can drop.
+board: PiBot V588
+name: PiBot recovery - SD DOWNLOAD TEST
+meta: Isolate HTTP SD reads from machine outputs and OLED
+
+stepping:
+  engine: Timed
+
+spi:
+  miso_pin: gpio.2
+  mosi_pin: gpio.1
+  sck_pin: gpio.21
+
+sdcard:
+  card_detect_pin: NO_PIN
+  cs_pin: gpio.9
+
+start:
+  must_home: true

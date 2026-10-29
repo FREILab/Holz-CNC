@@ -1,0 +1,181 @@
+##############################################################################
+# PiBot V5.88 Ultra - FluidNC
+# X SPI driver bring-up test
+#
+# Only X is configured as a TMC5160 SPI driver.
+# Y/Y2/Z are configured logically but have no motor drivers yet.
+# Do not use this as a production machine configuration.
+##############################################################################
+
+board: PiBot V588
+name: PiBot V588 X SPI Test
+
+stepping:
+  engine: I2S_STATIC
+  idle_ms: 254
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 0
+
+spi:
+  miso_pin: gpio.2
+  mosi_pin: gpio.1
+  sck_pin: gpio.21
+
+sdcard:
+  card_detect_pin: NO_PIN
+  cs_pin: gpio.9
+
+i2so:
+  bck_pin: gpio.16
+  data_pin: gpio.17
+  ws_pin: gpio.18
+
+# Keep these peripherals disabled during the first driver test.
+probe:
+  pin: NO_PIN
+  toolsetter_pin: NO_PIN
+  check_mode_start: false
+  hard_stop: false
+
+coolant:
+  flood_pin: gpio.10
+  mist_pin: gpio.15
+
+user_outputs:
+  digital0_pin: gpio.4
+  digital1_pin: gpio.5
+
+start:
+  must_home: false
+
+axes:
+  shared_stepper_disable_pin: NO_PIN
+
+  x:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 300.000
+    acceleration_mm_per_sec2: 20.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 0
+      positive_direction: false
+      mpos_mm: 0.000
+      feed_mm_per_min: 50.000
+      seek_mm_per_min: 100.000
+      settle_ms: 250
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+
+      tmc_5160:
+        step_pin: I2SO.2
+        direction_pin: I2SO.1
+        disable_pin: I2SO.0
+        cs_pin: I2SO.3
+        spi_index: -1
+        # Verify this against the resistor fitted to your SilentStepper.
+        r_sense_ohms: 0.075
+        run_amps: 0.30
+        hold_amps: 0.10
+        microsteps: 16
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        use_enable: true
+
+  # Logical Y axis. The two motors will be added after X is verified.
+  y:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 300.000
+    acceleration_mm_per_sec2: 20.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 0
+      positive_direction: false
+      mpos_mm: 0.000
+      feed_mm_per_min: 50.000
+      seek_mm_per_min: 100.000
+      settle_ms: 250
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      standard_stepper:
+        step_pin: NO_PIN
+        direction_pin: NO_PIN
+        disable_pin: NO_PIN
+
+  z:
+    steps_per_mm: 800.000
+    max_rate_mm_per_min: 300.000
+    acceleration_mm_per_sec2: 20.000
+    max_travel_mm: 300.000
+    soft_limits: false
+    homing:
+      cycle: 0
+      positive_direction: false
+      mpos_mm: 0.000
+      feed_mm_per_min: 50.000
+      seek_mm_per_min: 100.000
+      settle_ms: 250
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      standard_stepper:
+        step_pin: NO_PIN
+        direction_pin: NO_PIN
+        disable_pin: NO_PIN
+
+pwm:
+  pwm_hz: 5000
+  output_pin: gpio.45
+  enable_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+  tool_num: 0
+  speed_map: 0=0.000% 10000=100.000%
+  off_on_alarm: false
+
+laser:
+  pwm_hz: 5000
+  output_pin: gpio.46
+  enable_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+  tool_num: 1
+  speed_map: 0=0.000% 255=100.000%
+  off_on_alarm: true
+
+spindle_10v:
+  forward_pin: gpio.7
+  reverse_pin: gpio.8
+  pwm_hz: 5000
+  output_pin: gpio.6
+  enable_pin: NO_PIN
+  direction_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+  spinup_ms: 0
+  spindown_ms: 0
+  tool_num: 2
+  speed_map: 0=0.000% 1000=0.000% 24000=100.000%
+  off_on_alarm: false
