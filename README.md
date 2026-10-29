@@ -23,6 +23,7 @@ Aufbau der Maschine.
 | [`3D/Schaltkasten/`](3D/Schaltkasten/) | 3D-Druckteile Schaltkasten und Maschine (Fusion `.f3d` + `.stl`/`.3mf`) |
 | [`3D/Pibot-Kasten/`](3D/Pibot-Kasten/) | Gehäuse der PiBot-Steuerung inkl. Halterungen (Fusion-Archiv `HolzCNC-PiBot-Rebuild-Box.f3d`), Druckdateien `PiBot+TMC_Mount.3mf` und `Kabeldurchführung.3mf` |
 | [`Controller/`](Controller/) | **FluidNC-Konfiguration**, Postprozessor, Validator, Firmware-Notizen |
+| [`Werkzeugbibliotheken/`](Werkzeugbibliotheken/) | **Fräserinventar** und Werkzeugbibliotheken für Fusion 360 und Estlcam |
 | [`Rechnungen/`](Rechnungen/) | Rechnungen und Fehlbestellungen |
 
 ## Schaltplan Schaltkasten
