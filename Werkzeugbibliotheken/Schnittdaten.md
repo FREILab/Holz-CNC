@@ -60,3 +60,7 @@ Erzeugt von `generate.py` – nicht von Hand bearbeiten.
 | 14 | 1555-001 Hohlkehlfräser D22 R11 2Z (8mm Schaft) | Multiplex | 18000 | 1600 | 500 | 2.4 | 2.2 | 0.044 |
 | 14 | 1555-001 Hohlkehlfräser D22 R11 2Z (8mm Schaft) | MDF | 18000 | 2200 | 600 | 3 | 2.2 | 0.061 |
 | 14 | 1555-001 Hohlkehlfräser D22 R11 2Z (8mm Schaft) | Schaumstoff | 12000 | 2950 | 980 | 9 | 2.2 | 0.123 |
+| 15 | 1241-16 16mm Planfräser 2 Wendeplatten (8mm Schaft) | Hartholz | 12000 | 1400 | 400 | 0.8 | 5.6 | 0.058 |
+| 15 | 1241-16 16mm Planfräser 2 Wendeplatten (8mm Schaft) | Multiplex | 12000 | 1800 | 500 | 1 | 6.4 | 0.075 |
+| 15 | 1241-16 16mm Planfräser 2 Wendeplatten (8mm Schaft) | MDF | 12000 | 2450 | 600 | 1.2 | 6.4 | 0.102 |
+| 15 | 1241-16 16mm Planfräser 2 Wendeplatten (8mm Schaft) | Schaumstoff | 12000 | 4900 | 1000 | 3.8 | 8 | 0.204 |

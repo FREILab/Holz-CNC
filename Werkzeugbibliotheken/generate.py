@@ -77,6 +77,13 @@ TOOLS = [
     {"id": "1555-001", "name": "Hohlkehlfräser D22 R11 2Z (8mm Schaft)", "ball": True, "vendor": "HC",
      "link": "https://hc-maschinentechnik.de/Hohlkehlfraeser", "chip": scaled(UPCUT_1_4, 0.6), "doc_ref": 6,
      "generic": {"DC": 22, "SFDM": 8, "LCF": 16, "LB": 20, "OAL": 48, "NOF": 2}},
+    # Planfräser mit 2 Wendeschneidplatten APGT1135 (Art. 1241, D16 / S8 / AP8 / L1 20 / L50).
+    # Hersteller: Holz 600 m/min -> 12.000 U/min bei Ø 16 (rpm begrenzt). Planen =
+    # flache Zustellung (doc_ref), Eintauchen nur schräg (max. 5,5° laut Hersteller).
+    {"id": "1241-16", "name": "16mm Planfräser 2 Wendeplatten (8mm Schaft)", "vendor": "HC",
+     "link": "https://hc-maschinentechnik.de/Planfraeser-mit-Wendeschneidplatten-eckig",
+     "chip": UPCUT_1_4, "rpm": 12000, "doc_ref": 2.5,
+     "generic": {"DC": 16, "SFDM": 8, "LCF": 8, "LB": 20, "OAL": 50, "NOF": 2}},
 ]
 GENERIC_TEMPLATE = "W04508"   # SpeTool-Eintrag als JSON-Gerüst für generische Werkzeuge
 
@@ -107,7 +114,7 @@ def chipload(tool, mat):
 
 def cutting_data(tool, geo, mat):
     dc, lcf, nof = geo["DC"], geo["LCF"], geo["NOF"]
-    rpm = mat["rpm"]
+    rpm = min(mat["rpm"], tool.get("rpm", mat["rpm"]))
     fz = chipload(tool, mat) * mat["feed_factor"]
     feed = min(rpm * nof * fz, mat["feed_max"])
     feed = round(feed / 50) * 50
@@ -119,7 +126,7 @@ def cutting_data(tool, geo, mat):
         doc = min(mat["doc"] * tool.get("doc_ref", dc), lcf - 1)
         stepover = 0.1 * dc
     else:
-        doc = min(mat["doc"] * dc, lcf - 1)
+        doc = min(mat["doc"] * tool.get("doc_ref", dc), lcf - 1)
         stepover = mat["stepover"] * dc
     return {
         "rpm": rpm, "feed": feed, "plunge": plunge, "ramp": round(feed / 2 / 10) * 10,
