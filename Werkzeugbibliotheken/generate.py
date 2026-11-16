@@ -37,6 +37,8 @@ def scaled(c, f):
     return {k: v * f for k, v in c.items()}
 
 
+HC_BALL = "https://hc-maschinentechnik.de/VHM-Radiusfraeser-fuer-Holz-Aluminium-Kunststoff-Messing"
+
 # Inventar (Reihenfolge = Werkzeugnummer). nof überschreibt fehlerhafte DB-Werte.
 TOOLS = [
     {"id": "W04508", "name": "6mm Upcut 2Z", "chip": UPCUT_1_4},
@@ -58,6 +60,23 @@ TOOLS = [
      "generic": {"DC": 8, "SFDM": 8, "LCF": 25, "LB": 40, "OAL": 60, "NOF": 2}},
     {"id": "BALL-6", "name": "6mm Kugelfräser 2Z", "chip": UPCUT_1_4, "ball": True,
      "generic": {"DC": 6, "SFDM": 6, "LCF": 20, "LB": 35, "OAL": 60, "NOF": 2}},
+    # HC-Maschinentechnik (Maße von den Produktseiten, Stand 2026-11). Keine
+    # Herstellertabelle: Chipload = Spiralfräser, bei den kleinen linear mit Ø skaliert.
+    {"id": "1203-001", "name": "Kugelfräser R0,5 2Z (4mm Schaft)", "ball": True, "vendor": "HC",
+     "link": HC_BALL, "chip": scaled(UPCUT_1_8, 1.0 / 3.175),
+     "generic": {"DC": 1, "SFDM": 4, "LCF": 2, "LB": 20, "OAL": 50, "NOF": 2}},
+    {"id": "1203-005", "name": "Kugelfräser R1,5 2Z (4mm Schaft)", "ball": True, "vendor": "HC",
+     "link": HC_BALL, "chip": scaled(UPCUT_1_8, 3.0 / 3.175),
+     "generic": {"DC": 3, "SFDM": 4, "LCF": 5, "LB": 20, "OAL": 50, "NOF": 2}},
+    {"id": "1203-011", "name": "Kugelfräser R5 2Z (10mm Schaft)", "ball": True, "vendor": "HC",
+     "link": HC_BALL, "chip": UPCUT_1_4,
+     "generic": {"DC": 10, "SFDM": 10, "LCF": 20, "LB": 45, "OAL": 75, "NOF": 2}},
+    # Hohlkehlfräser D22/R11 = Halbkugel mit 8-mm-Schaft; Gesamtlänge = Schaft 32 +
+    # Schneide 16 (nicht angegeben, nachmessen). Großer Ø an kleiner Fräse: 60 %
+    # Chipload, Zustellung wie ein 6-mm-Fräser (doc_ref), max. 30.000 U/min.
+    {"id": "1555-001", "name": "Hohlkehlfräser D22 R11 2Z (8mm Schaft)", "ball": True, "vendor": "HC",
+     "link": "https://hc-maschinentechnik.de/Hohlkehlfraeser", "chip": scaled(UPCUT_1_4, 0.6), "doc_ref": 6,
+     "generic": {"DC": 22, "SFDM": 8, "LCF": 16, "LB": 20, "OAL": 48, "NOF": 2}},
 ]
 GENERIC_TEMPLATE = "W04508"   # SpeTool-Eintrag als JSON-Gerüst für generische Werkzeuge
 
@@ -97,7 +116,7 @@ def cutting_data(tool, geo, mat):
         doc = min(mat["vdoc"], lcf)
         stepover = 0.1 * dc
     elif tool.get("ball"):
-        doc = min(mat["doc"] * dc, lcf - 1)
+        doc = min(mat["doc"] * tool.get("doc_ref", dc), lcf - 1)
         stepover = 0.1 * dc
     else:
         doc = min(mat["doc"] * dc, lcf - 1)
@@ -128,7 +147,7 @@ def generic_tool(template, tool):
     g = tool["generic"]
     src = json.loads(json.dumps(template))
     src["type"] = "ball end mill" if tool.get("ball") else "flat end mill"
-    src["product-link"] = ""
+    src["product-link"] = tool.get("link", "")
     src["geometry"].update(g)
     src["geometry"].update({
         "RE": g["DC"] / 2 if tool.get("ball") else 0,
@@ -188,8 +207,8 @@ def build(db):
             geo["NOF"] = tool["nof"]
         if "TA" in geo:
             geo["TA"] = round(geo["TA"], 6)
-        vendor = "Generisch" if "generic" in tool else "SpeTool"
-        desc = f"{vendor} {tool['name']}" if "generic" in tool else f"SpeTool {tool['id']} {tool['name']}"
+        vendor = tool.get("vendor", "Generisch") if "generic" in tool else "SpeTool"
+        desc = f"{vendor} {tool['name']}" if vendor == "Generisch" else f"{vendor} {tool['id']} {tool['name']}"
         src.update({
             "BMC": "carbide",
             "vendor": vendor,
