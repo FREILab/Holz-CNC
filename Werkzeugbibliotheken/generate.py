@@ -51,19 +51,31 @@ TOOLS = [
     {"id": "W06508", "name": "V-Bit 60° 3Z", "chip": VBIT, "vbit": True},
     # gerade Schneiden räumen schlechter aus: 80 % Spiral-Chipload
     {"id": "W04705", "name": "6mm Stirnfräser gerade 2Z", "chip": scaled(UPCUT_1_4, 0.8)},
+    # Generische Kugelfräser (kein bestimmter Hersteller, Geometrie = übliche Maße –
+    # nach dem Einspannen Schneiden-/Gesamtlänge am echten Fräser prüfen).
+    # Chipload wie Spiralfräser; seitliche Zustellung fürs 3D-Schlichten 10 % x Ø.
+    {"id": "BALL-8", "name": "8mm Kugelfräser 2Z", "chip": UPCUT_1_4, "ball": True,
+     "generic": {"DC": 8, "SFDM": 8, "LCF": 25, "LB": 40, "OAL": 60, "NOF": 2}},
+    {"id": "BALL-6", "name": "6mm Kugelfräser 2Z", "chip": UPCUT_1_4, "ball": True,
+     "generic": {"DC": 6, "SFDM": 6, "LCF": 20, "LB": 35, "OAL": 60, "NOF": 2}},
 ]
+GENERIC_TEMPLATE = "W04508"   # SpeTool-Eintrag als JSON-Gerüst für generische Werkzeuge
 
 # Maschinen-Abminderung: feed = rpm * Z * Chipload(Hersteller) * feed_factor.
 # doc = Zustellung in x Durchmesser, stepover in x Durchmesser.
+# Reihenfolge hart -> weich: das erste Preset ist in Fusion der Standard, und ein
+# versehentlich gewähltes Hartholz-Preset ist harmlos, Schaumstoff in Holz nicht.
+# Stand 2026-11: Holz-Faktoren nach Probeschnitten um ca. 25-30 % angehoben
+# (vorher 0,30 / 0,35 / 0,40; max. Vorschub 3500, Eintauchen 300 / 400 / 500).
 MATERIALS = [
-    {"name": "Schaumstoff", "est": 1, "chip": "mdf", "rpm": 12000, "feed_factor": 1.0,
+    {"name": "Hartholz", "est": 1, "chip": "hard", "rpm": 18000, "feed_factor": 0.38,
+     "doc": 0.33, "stepover": 0.35, "plunge_max": 400, "feed_max": 4000, "vdoc": 1.0},
+    {"name": "Multiplex", "est": 2, "chip": "multiplex", "rpm": 18000, "feed_factor": 0.45,
+     "doc": 0.4, "stepover": 0.4, "plunge_max": 500, "feed_max": 4000, "vdoc": 1.5},
+    {"name": "MDF", "est": 3, "chip": "mdf", "rpm": 18000, "feed_factor": 0.5,
+     "doc": 0.5, "stepover": 0.4, "plunge_max": 600, "feed_max": 4000, "vdoc": 2.0},
+    {"name": "Schaumstoff", "est": 4, "chip": "mdf", "rpm": 12000, "feed_factor": 1.0,
      "doc": 1.5, "stepover": 0.5, "plunge_max": 1000, "feed_max": 5000, "vdoc": 3.0},
-    {"name": "MDF", "est": 2, "chip": "mdf", "rpm": 18000, "feed_factor": 0.4,
-     "doc": 0.5, "stepover": 0.4, "plunge_max": 500, "feed_max": 3500, "vdoc": 2.0},
-    {"name": "Multiplex", "est": 3, "chip": "multiplex", "rpm": 18000, "feed_factor": 0.35,
-     "doc": 0.4, "stepover": 0.4, "plunge_max": 400, "feed_max": 3500, "vdoc": 1.5},
-    {"name": "Hartholz", "est": 4, "chip": "hard", "rpm": 18000, "feed_factor": 0.3,
-     "doc": 0.33, "stepover": 0.35, "plunge_max": 300, "feed_max": 3500, "vdoc": 1.0},
 ]
 
 
@@ -84,6 +96,9 @@ def cutting_data(tool, geo, mat):
     if tool.get("vbit"):
         doc = min(mat["vdoc"], lcf)
         stepover = 0.1 * dc
+    elif tool.get("ball"):
+        doc = min(mat["doc"] * dc, lcf - 1)
+        stepover = 0.1 * dc
     else:
         doc = min(mat["doc"] * dc, lcf - 1)
         stepover = mat["stepover"] * dc
@@ -100,10 +115,28 @@ def load_spetool():
         for tool in TOOLS:
             if f"SpeTool {tool['id']} " in t["description"]:
                 found[tool["id"]] = t
+    for tool in TOOLS:
+        if "generic" in tool:
+            found[tool["id"]] = generic_tool(found[GENERIC_TEMPLATE], tool)
     missing = [t["id"] for t in TOOLS if t["id"] not in found]
     if missing:
         raise SystemExit(f"nicht in SpeTool-DB: {missing}")
     return found
+
+
+def generic_tool(template, tool):
+    g = tool["generic"]
+    src = json.loads(json.dumps(template))
+    src["type"] = "ball end mill" if tool.get("ball") else "flat end mill"
+    src["product-link"] = ""
+    src["geometry"].update(g)
+    src["geometry"].update({
+        "RE": g["DC"] / 2 if tool.get("ball") else 0,
+        "shoulder-length": g["LCF"], "shoulder-diameter": g["DC"],
+        "tip-diameter": 0 if tool.get("ball") else g["DC"],
+        "assemblyGaugeLength": g["LB"],
+    })
+    return src
 
 
 def fusion_preset(tool, mat, d, dc):
@@ -155,17 +188,21 @@ def build(db):
             geo["NOF"] = tool["nof"]
         if "TA" in geo:
             geo["TA"] = round(geo["TA"], 6)
-        desc = f"SpeTool {tool['id']} {tool['name']}"
+        vendor = "Generisch" if "generic" in tool else "SpeTool"
+        desc = f"{vendor} {tool['name']}" if "generic" in tool else f"SpeTool {tool['id']} {tool['name']}"
         src.update({
             "BMC": "carbide",
-            "vendor": "SpeTool",
+            "vendor": vendor,
             "product-id": tool["id"],
             "description": desc,
-            "expressions": fusion_expressions(src, geo, desc, tool["id"]),
+            "expressions": fusion_expressions(src, geo, desc, tool["id"], vendor),
             "guid": str(uuid.uuid5(uuid.NAMESPACE_URL, f"freilab/{tool['id']}")),
         })
+        # manual-tool-change MUSS False sein: sonst schreibt freilab-fluidnc.cps nur
+        # "M0 + Kommentar" statt "Tn M6" – FluidNC (atc_manual) löst dann keinen
+        # Werkzeugwechsel aus, und Post Process All findet den Programmanfang nicht.
         src["post-process"].update({"number": number, "diameter-offset": number,
-                                    "length-offset": number, "manual-tool-change": True})
+                                    "length-offset": number, "manual-tool-change": False})
         presets = []
         for mat in MATERIALS:
             d = cutting_data(tool, geo, mat)
@@ -178,7 +215,7 @@ def build(db):
     return {"data": fusion, "version": 37}, rows, table
 
 
-def fusion_expressions(src, geo, desc, product_id):
+def fusion_expressions(src, geo, desc, product_id, vendor):
     # Vollständiger Satz aus der Geometrie: fehlende Längen (z. B. W04901, W04502
     # in der SpeTool-DB) markiert Fusion sonst als "missing required data".
     mm = lambda v: f"{v:g} mm"
@@ -192,11 +229,13 @@ def fusion_expressions(src, geo, desc, product_id):
         "tool_overallLength": mm(geo["OAL"]),
         "tool_numberOfFlutes": str(geo["NOF"]),
         "tool_material": "'carbide'",
-        "tool_vendor": "'SpeTool'",
+        "tool_vendor": f"'{vendor}'",
         "tool_productId": f"'{product_id}'",
         "tool_productLink": f"'{src['product-link']}'",
         "tool_unit": "'millimeters'",
     }
+    if geo.get("RE"):
+        expr["tool_cornerRadius"] = mm(geo["RE"])
     if "TA" in geo:
         expr["tool_taperAngle"] = f"{geo['TA']:g} degrees"
     return expr
@@ -216,11 +255,11 @@ def estlcam_row(tool, geo, mat, d, number):
     row.update({
         "Name": f"{mat['name']} - {tool['name']} - {tool['id']}",
         "Type": "Normal",
-        "Number": f(mat["est"] * 10 + number),
+        "Number": f(mat["est"] * 100 + number),
         "Diameter": f(geo["DC"]),
         "Angle": f(round(angle)),
         "Tip_Dia": f(geo.get("tip-diameter", 0)),
-        "Offset": f(0), "R_Edge": f(0),
+        "Offset": f(0), "R_Edge": f(geo.get("RE", 0)),
         "H_Cut": f(geo["LCF"]),
         "Flutes": f(geo["NOF"]),
         "Dpp": f(d["doc"]),
